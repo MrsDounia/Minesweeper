@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Jeu_du_demineur.exe" version="1.0.0.1" publicKeyToken="42c5cd50d1b12fe2" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Jeu_du_demineur" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Jeu_du_demineur.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options de manifeste UAC
+          Pour changer le niveau du contrôle de compte d'utilisateur Windows, remplacez le
+          nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Pour utiliser la virtualisation des fichiers et du Registre afin d'assurer
+         une compatibilité ascendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jeu_du_demineur.exe" size="122848">
+      <assemblyIdentity name="Jeu_du_demineur" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S1TDuRDU2HOoONjGKDXov4FhEZkdSZdhGl6wQ4EwDss=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Jeu_du_demineur.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-1MVFMOR\douni" issuerKeyHash="55dbf4c99ffdab4e2a251ed38a3af03e91d9fbea" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iwf/RXx5UqJZXMnhlr5nmWtHEyLY+LRjMaKTLjehAPk=</DigestValue></Reference></SignedInfo><SignatureValue>TIq6dRuQBtpj46MsH1rgbXtF1W2CwDE8VdmycKjz4lqoS36IM8woeSNi4uWoktQXBYdvhj1lVe6SPDkacIDTJJtR+NK+tyy0+HQbVLm1DfFBVypSw8wU9PDeWwDvYwRNnV+n3DAhyLQ17maucWjGzP7yql/pCXl1pGIu/u9z1xA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uPELxnv1E7mrT54H5N90WCj+sRKYOlzwkUCcF1KoEcLBpPKm26D0L/vJjMP7T6/fawLIfksNXVHbdcBVx6oiFeO/GXX3KQ63xKDjcxCHzEstwKkAS+X9OUfS0dgU13LzMiUvf29Hm1zNT13hZ03DELphWBYoW+xQ9gkLce2oAlk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f900a1372e93a23163b4f8d82213476b9967be96e1c95c59a252797c45ff078b" Description="" Url=""><as:assemblyIdentity name="Jeu_du_demineur.exe" version="1.0.0.1" publicKeyToken="42c5cd50d1b12fe2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-1MVFMOR\douni</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>pBKI92TCSNKxczBdS8REpZcbPEV0G73qqqDfwesw+8g=</DigestValue></Reference></SignedInfo><SignatureValue>Vyi36dWWkmnFQ4jUGpXUVjeUGI3U6F2HQTqflT4NF7r+sZ+Hzs21G6Mqe31lJSvnlKct+Ubi5nkOeQ9waTQiT1XJWHeZvmJ4nQx5TEztE3yjjJ1yVSB5ZfUYJLSeFjACuY9OrvF4GSoOGayae6WlZjXkykjuLPqyfCIKPaxJNac=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uPELxnv1E7mrT54H5N90WCj+sRKYOlzwkUCcF1KoEcLBpPKm26D0L/vJjMP7T6/fawLIfksNXVHbdcBVx6oiFeO/GXX3KQ63xKDjcxCHzEstwKkAS+X9OUfS0dgU13LzMiUvf29Hm1zNT13hZ03DELphWBYoW+xQ9gkLce2oAlk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQelz5+ZsZlLNGIozJeBD2LjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADEATQBWAEYATQBPAFIAXABkAG8AdQBuAGkwHhcNMjMwMTMxMjE0NDAwWhcNMjQwMjAxMDM0NDAwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADEATQBWAEYATQBPAFIAXABkAG8AdQBuAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALjxC8Z79RO5q0+eB+TfdFgo/rESmDpc8JFAnBdSqBHCwaTyptug9C/7yYzD+0+v32sCyH5LDV1R23XAVceqIhXjvxl19ykOt8Sg43MQh8xLLcCpAEvl/TlH0tHYFNdy8zIlL39vR5tczU9d4WdNwxC6YVgWKFvsUPYJC3HtqAJZAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAcQS8s9r4tvGomz2YsomNBwYVR4K5gyUufjsxRoS23goshLjaFCLFLBvDy7j/bNBOirGwg/jD+Kq3PYP1pbnD7AGGRNOKCArc8oazTHxWWpRtrFYXQBVox91PRdij16lLTZheALFewqohHsZRyCeGeRn8aaOBY+TGEbi/1E32Lpw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
