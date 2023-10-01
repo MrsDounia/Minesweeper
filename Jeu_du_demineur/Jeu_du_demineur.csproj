@@ -113,19 +113,7 @@
     <None Include="Resources\flag_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\flag.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\flag_.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\flag3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\flag2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon_bomb.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bomb.png" />

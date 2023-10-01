@@ -73,26 +73,6 @@ namespace Jeu_du_demineur.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap flag {
-            get {
-                object obj = ResourceManager.GetObject("flag", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap flag_ {
-            get {
-                object obj = ResourceManager.GetObject("flag_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap flag_icon {
             get {
                 object obj = ResourceManager.GetObject("flag_icon", resourceCulture);
@@ -103,29 +83,9 @@ namespace Jeu_du_demineur.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap flag2 {
-            get {
-                object obj = ResourceManager.GetObject("flag2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap flag3 {
             get {
                 object obj = ResourceManager.GetObject("flag3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_bomb {
-            get {
-                object obj = ResourceManager.GetObject("icon_bomb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

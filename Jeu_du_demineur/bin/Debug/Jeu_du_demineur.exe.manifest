@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jeu_du_demineur.exe" size="122848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jeu_du_demineur.exe" size="122336">
       <assemblyIdentity name="Jeu_du_demineur" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>S1TDuRDU2HOoONjGKDXov4FhEZkdSZdhGl6wQ4EwDss=</dsig:DigestValue>
+        <dsig:DigestValue>5+2NCR/qlCk54nj1PJ3/qPGHVYRuAGxruH4RjchaEFM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
