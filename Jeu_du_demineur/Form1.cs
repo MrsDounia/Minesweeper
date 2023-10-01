@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /**
- * Le jeu de demineur suivant contient une grille de taille 8x8, avec 8 bombes disposés et donc 8 drapeaux
- * Les fonctionnalités sont : 
- * - Click simple pour ouvrir une case
- * - Click droit pour déposer un drapeau rouge (on peut reclicker sur une case pour retirer le drapeau)
- * - Boutton rejouer pour recommencer une partie
+ *  The minesweeper game below contains an 8x8 grid, with 8 bombs and 8 flags.
+ *  The features are : 
+ *  Single click to open a square
+ *  Right click to drop a red flag (you can reclick on a square to remove the flag)
+ *  Replay button to restart a game
  */
 
 
@@ -36,11 +36,6 @@ namespace Jeu_du_demineur
             Start();
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
@@ -78,7 +73,6 @@ namespace Jeu_du_demineur
                     button.Click += new EventHandler(OnButtonPressed);
                     button.MouseUp += ButMouseUp;
 
-                    //button.MouseUp += new MouseEventHandler(OnButtonPressedMouse);
                     button.Tag = $"{i},{j}";
                     flowLayoutPanel1.Controls.Add(button);
                     buttons[i, j] = button;
@@ -86,10 +80,12 @@ namespace Jeu_du_demineur
             }
         }
 
-        //Evenement de click simple sur une case:
-        //- Revele une bombe
-        //- Revele plusieurs cases vides
-        //- Revele une case ne contenant pas de bombe et non vide
+        /*
+         * Single click event on a square:
+         * Reveals a bomb
+         * Reveals several empty squares
+         * Reveals a square that does not contain a bomb and is not empty
+         */
         private void OnButtonPressed(object sender, EventArgs e)
         {
             Button pressedButton = sender as Button;
@@ -123,7 +119,7 @@ namespace Jeu_du_demineur
             pressedButton.Click -= OnButtonPressed;
         }
 
-        //Ouvrir les cases adjacentes vides
+        //Open adjacent empty boxes
         private void OpenAdjacentCasesEmpty(Button but)
         {
             int i = Convert.ToInt32(but.Tag.ToString().Split(',').GetValue(0));
@@ -137,12 +133,12 @@ namespace Jeu_du_demineur
                 for (int countJ = -1; countJ < 2; countJ++)
                 {
                     int checkerJ = j + countJ;
-                    //Pas besoin de verifier plus si les indices sont out of bound
+                    //No need to check more if the indices are out of bound
                     if (checkerI == -1 || checkerJ == -1 || checkerI > gridSize - 1 || checkerJ > gridSize - 1)
                         continue;
 
                     if (checkerJ == j && checkerI == i)
-                        continue; //pas besoin de checker la case elle meme
+                        continue; //no need to check the square itself
 
                     Button butAdj = buttons[checkerI, checkerJ];
                     int iAdj = Convert.ToInt32(butAdj.Tag.ToString().Split(',').GetValue(0));
@@ -161,7 +157,7 @@ namespace Jeu_du_demineur
 
                         }
                     }
-                    else if (value != 10) //Pour les boutons non vide et qui ne sont pas des bombes
+                    else if (value != 10) // For non - empty buttons that are not bombs
                     {
                         butAdj.PerformClick();
                         butAdj.Image = null;
@@ -177,7 +173,7 @@ namespace Jeu_du_demineur
 
         }
 
-        //Poser ou retirer un drapeau
+        //Place or remove a flag
         private void ButMouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -204,7 +200,7 @@ namespace Jeu_du_demineur
         }
 
 
-        //Generer les bombes
+        //Generating bombs
         private void GenerateBombs()
         {
             Random r = new Random();
@@ -217,17 +213,18 @@ namespace Jeu_du_demineur
 
                 if (grid[posI, posJ] == 0)
                 {
-                    grid[posI, posJ] = 10; //on affecte une bombe a cette case  
+                    grid[posI, posJ] = 10; //we assign a bomb to this square  
                     i++;
                 }
 
             }
         }
 
-        //Generer les valeurs des cases :
-        //10 pour indiquer une bombe (gérer à la fonction GenerateBombs)
-        //20 pour indiquer une case vide
-        //Un nombre entre 1 et 8 pour indiquer le nombre de bombes adjacentes
+        /*Generate box values :
+         * 10 to indicate a bomb (managed by the GenerateBombs function)
+         * 20 to indicate an empty box
+         * A number between 1 and 8 to indicate the number of adjacent bombs
+         */
         private void GenerateGridValues()
         {
             for (byte i = 0; i < gridSize; i++)
@@ -235,7 +232,7 @@ namespace Jeu_du_demineur
                 for (byte j = 0; j < gridSize; j++)
                 {
                     if (grid[i, j] == 10)
-                        continue; //evite de checker une case contenant une bombe
+                        continue; //avoid checking a square containing a bomb
 
                     byte bombCounts = 0;
 
@@ -247,14 +244,14 @@ namespace Jeu_du_demineur
                         {
 
                             int checkerJ = j + countJ;
-                            //Pas besoin de verifier plus si les indices sont out of bound
+                            //No need to check more if the indices are out of bound
                             if (checkerI == -1 || checkerJ == -1 || checkerI > gridSize - 1 || checkerJ > gridSize - 1)
                                 continue;
 
                             if (checkerJ == j && checkerI == i)
-                                continue; //pas besoin de checker la case elle meme
+                                continue; //no need to check the box itself
 
-                            if (grid[checkerI, checkerJ] == 10) //il y a une bombe
+                            if (grid[checkerI, checkerJ] == 10) //there's a bomb
                             {
                                 bombCounts++;
                             }
@@ -274,8 +271,8 @@ namespace Jeu_du_demineur
             }
         }
 
-       
-        //Boutton rejouer
+
+        //Boutton replay
         private void button1_Click(object sender, EventArgs e)
         {
             flags = 8;
