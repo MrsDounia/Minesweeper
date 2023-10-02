@@ -10,7 +10,6 @@ The features are :
 
 Here are some images of the game :
 
-![image](https://github.com/MrsDounia/Minesweeper/assets/78479547/6204ed9f-3789-47e4-ba8a-c23c8069b663)
-
-![image](https://github.com/MrsDounia/Minesweeper/assets/78479547/1c8f3527-068a-4068-a517-1afd5a5dbd2b)
+<img width="500" alt="Minesweeper_img1" src="https://github.com/MrsDounia/Minesweeper/assets/78479547/dcc923d5-662c-4432-bcee-3baf4867cb01">
+<img width="500" alt="Minesweeper_img2" src="https://github.com/MrsDounia/Minesweeper/assets/78479547/5af17d4a-5048-440e-b1ea-0b1bdf320414">
 
